@@ -6,6 +6,11 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/Shailu1964/CICD-Devops.git'
             }
         }
+        stage('Check Zowe CLI') {
+            steps {
+                sh 'zowe --version'
+            }
+        }
         stage('Build') {
             steps {
                 // Example: Compile COBOL programs using Zowe CLI or DBB
