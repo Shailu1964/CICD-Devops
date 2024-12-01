@@ -21,7 +21,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 // Example: Deploy using Zowe CLI or Ansible
-                sh 'zowe zos-files upload file-to-data-set "C:\Users\shail\OneDrive\Desktop\ibm\CICD\CICD-Devops\example.cob" Z52080.SHY.LOADLIB(EXAMPLE)'
+                sh 'zowe zos-files upload file-to-data-set "C:/Users/shail/OneDrive/Desktop/ibm/CICD/CICD-Devops/example.cob" Z52080.SHY.LOADLIB(EXAMPLE)'
             }
         }
     }
